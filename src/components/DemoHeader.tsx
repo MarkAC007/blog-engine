@@ -10,7 +10,7 @@ const DemoHeader = () => {
           </Link>
           <nav>
             <a 
-              href="https://github.com/your-org/blog-engine" 
+              href="https://github.com/MarkAC007/blog-engine" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-900"

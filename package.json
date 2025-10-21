@@ -7,12 +7,12 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR-USERNAME/blog-engine.git"
+    "url": "https://github.com/MarkAC007/blog-engine.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR-USERNAME/blog-engine/issues"
+    "url": "https://github.com/MarkAC007/blog-engine/issues"
   },
-  "homepage": "https://github.com/YOUR-USERNAME/blog-engine#readme",
+  "homepage": "https://github.com/MarkAC007/blog-engine#readme",
   "keywords": [
     "blog",
     "blog-engine",

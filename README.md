@@ -13,12 +13,12 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/actions/workflow/status/YOUR-USERNAME/blog-engine/ci.yml?branch=main&label=CI%2FCD&logo=github" alt="CI/CD Status"/>
+  <img src="https://img.shields.io/github/actions/workflow/status/MarkAC007/blog-engine/ci.yml?branch=main&label=CI%2FCD&logo=github" alt="CI/CD Status"/>
   <img src="https://img.shields.io/badge/React-18-blue?logo=react" alt="React 18"/>
   <img src="https://img.shields.io/badge/TypeScript-5-blue?logo=typescript" alt="TypeScript"/>
   <img src="https://img.shields.io/badge/Vite-5-purple?logo=vite" alt="Vite"/>
   <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License"/>
-  <img src="https://img.shields.io/github/last-commit/YOUR-USERNAME/blog-engine" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/last-commit/MarkAC007/blog-engine" alt="Last Commit"/>
 </p>
 
 > This blog engine demonstrates responsible AI usage in content creation through a human-in-the-loop workflow. All content is AI-assisted but human-reviewed, edited, and curated to ensure accuracy, relevance, and quality.
