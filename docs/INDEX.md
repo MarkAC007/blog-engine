@@ -10,20 +10,28 @@ This documentation suite provides everything you need to understand, deploy, and
 
 ### Document Hierarchy
 
-```
-Blog Engine Docs
-│
-├── 🏠 README (Main Documentation)
-│   └── Complete feature overview, usage guide, and API reference
-│
-├── ⚡ Quick Start Guide
-│   └── Get running in 5 minutes
-│
-├── 🏗️ Architecture Document
-│   └── Technical deep dive and design decisions
-│
-└── 📋 This Index
-    └── Navigation and documentation roadmap
+```mermaid
+graph TD
+    Root[📚 Blog Engine Docs]
+    Root --> README[🏠 README - Main Documentation]
+    Root --> Quick[⚡ Quick Start Guide]
+    Root --> Arch[🏗️ Architecture Document]
+    Root --> Index[📋 This Index]
+    
+    README --> READMEDesc[Complete feature overview,<br/>usage guide, and API reference]
+    Quick --> QuickDesc[Get running in 5 minutes]
+    Arch --> ArchDesc[Technical deep dive<br/>and design decisions]
+    Index --> IndexDesc[Navigation and<br/>documentation roadmap]
+    
+    style Root fill:#8b5cf6,stroke:#333,stroke-width:3px,color:#fff
+    style README fill:#61dafb,stroke:#333,stroke-width:2px
+    style Quick fill:#fbbf24,stroke:#333,stroke-width:2px
+    style Arch fill:#06b6d4,stroke:#333,stroke-width:2px
+    style Index fill:#34d399,stroke:#333,stroke-width:2px
+    style READMEDesc fill:#f4f4f4,stroke:#ddd,stroke-width:1px
+    style QuickDesc fill:#f4f4f4,stroke:#ddd,stroke-width:1px
+    style ArchDesc fill:#f4f4f4,stroke:#ddd,stroke-width:1px
+    style IndexDesc fill:#f4f4f4,stroke:#ddd,stroke-width:1px
 ```
 
 ---

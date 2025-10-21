@@ -21,41 +21,41 @@ The blog engine follows these core principles:
 
 ### High-Level Architecture
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                         Build Time                              │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐   │
-│  │   Markdown   │ --> │   Vite       │ --> │   Static     │   │
-│  │   Content    │     │   Build      │     │   HTML/CSS/  │   │
-│  │   (.md)      │     │   Process    │     │   JS Bundle  │   │
-│  └──────────────┘     └──────────────┘     └──────────────┘   │
-│         ↓                     ↓                     ↓          │
-│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐   │
-│  │  AI Image    │     │   SEO        │     │   WebP       │   │
-│  │  Generation  │     │   Generation │     │   Images     │   │
-│  │  (Optional)  │     │   (Sitemap)  │     │              │   │
-│  └──────────────┘     └──────────────┘     └──────────────┘   │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────────┐
-│                         Runtime                                 │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                 │
-│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐   │
-│  │   React      │ --> │   React      │ --> │   Rendered   │   │
-│  │   Router     │     │   Markdown   │     │   HTML       │   │
-│  │              │     │   Parser     │     │              │   │
-│  └──────────────┘     └──────────────┘     └──────────────┘   │
-│         ↓                     ↓                     ↓          │
-│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐   │
-│  │   SEO Meta   │     │   Syntax     │     │   Framer     │   │
-│  │   Tags       │     │   Highlight  │     │   Motion     │   │
-│  └──────────────┘     └──────────────┘     └──────────────┘   │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TB
+    subgraph BuildTime["Build Time"]
+        MD[Markdown Content<br/>.md files] --> Vite[Vite Build<br/>Process]
+        Vite --> Bundle[Static HTML/CSS/JS<br/>Bundle]
+        
+        MD --> AI[AI Image Generation<br/>Optional]
+        Vite --> SEO[SEO Generation<br/>Sitemap/Robots.txt]
+        Bundle --> WebP[WebP Images<br/>Optimized]
+        
+        style MD fill:#f4f4f4,stroke:#333,stroke-width:2px
+        style Vite fill:#646cff,stroke:#333,stroke-width:2px
+        style Bundle fill:#34d399,stroke:#333,stroke-width:2px
+        style AI fill:#8b5cf6,stroke:#333,stroke-width:2px
+        style SEO fill:#06b6d4,stroke:#333,stroke-width:2px
+        style WebP fill:#fbbf24,stroke:#333,stroke-width:2px
+    end
+    
+    Bundle ==> Router
+    
+    subgraph Runtime["Runtime - Browser"]
+        Router[React Router<br/>URL Routing] --> Parser[React Markdown<br/>Parser]
+        Parser --> HTML[Rendered HTML<br/>In Browser]
+        
+        Router --> Meta[SEO Meta Tags<br/>React Helmet]
+        Parser --> Syntax[Syntax Highlight<br/>Prism]
+        HTML --> Motion[Framer Motion<br/>Animations]
+        
+        style Router fill:#61dafb,stroke:#333,stroke-width:2px
+        style Parser fill:#f4f4f4,stroke:#333,stroke-width:2px
+        style HTML fill:#34d399,stroke:#333,stroke-width:2px
+        style Meta fill:#06b6d4,stroke:#333,stroke-width:2px
+        style Syntax fill:#fbbf24,stroke:#333,stroke-width:2px
+        style Motion fill:#ec4899,stroke:#333,stroke-width:2px
+    end
 ```
 
 ---
