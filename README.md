@@ -71,17 +71,22 @@ By open sourcing this engine, we demonstrate our commitment to transparency in h
 
 ### Technology Stack
 
-```
-┌─────────────────────────────────────────────────────┐
-│                  Blog Engine Stack                   │
-├─────────────────────────────────────────────────────┤
-│ Frontend: React 18 + TypeScript + Vite              │
-│ Styling: Tailwind CSS + Framer Motion               │
-│ Content: Markdown with Frontmatter                   │
-│ SEO: React Helmet + Schema.org JSON-LD              │
-│ Images: AI Generation (OpenAI + Gemini) + Sharp     │
-│ Syntax: React Markdown + Prism Syntax Highlighter   │
-└─────────────────────────────────────────────────────┘
+```mermaid
+graph LR
+    subgraph "Blog Engine Stack"
+        A[Frontend: React 18 + TypeScript + Vite]
+        B[Styling: Tailwind CSS + Framer Motion]
+        C[Content: Markdown with Frontmatter]
+        D[SEO: React Helmet + Schema.org JSON-LD]
+        E[Images: AI Generation OpenAI + Gemini + Sharp]
+        F[Syntax: React Markdown + Prism Highlighter]
+    end
+    style A fill:#61dafb,stroke:#333,stroke-width:2px
+    style B fill:#06b6d4,stroke:#333,stroke-width:2px
+    style C fill:#f4f4f4,stroke:#333,stroke-width:2px
+    style D fill:#34d399,stroke:#333,stroke-width:2px
+    style E fill:#8b5cf6,stroke:#333,stroke-width:2px
+    style F fill:#fbbf24,stroke:#333,stroke-width:2px
 ```
 
 ### Core Components
@@ -193,16 +198,18 @@ Summary and call-to-action.
 
 ### Workflow Overview
 
-```
-┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐
-│ Blog Content │ -> │ OpenAI GPT-4 │ -> │ Gemini Image │ -> │ Sharp WebP   │
-│  (Markdown)  │    │ (Prompt Gen) │    │  Generation  │    │ Optimization │
-└──────────────┘    └──────────────┘    └──────────────┘    └──────────────┘
-                                                                     |
-                                                                     v
-                                                          ┌──────────────────┐
-                                                          │ Update Frontmatter│
-                                                          └──────────────────┘
+```mermaid
+flowchart LR
+    A[Blog Content<br/>Markdown] --> B[OpenAI GPT-4<br/>Prompt Generation]
+    B --> C[Gemini Image<br/>Generation]
+    C --> D[Sharp WebP<br/>Optimization]
+    D --> E[Update<br/>Frontmatter]
+    
+    style A fill:#f4f4f4,stroke:#333,stroke-width:2px
+    style B fill:#74aa9c,stroke:#333,stroke-width:2px
+    style C fill:#8b5cf6,stroke:#333,stroke-width:2px
+    style D fill:#06b6d4,stroke:#333,stroke-width:2px
+    style E fill:#34d399,stroke:#333,stroke-width:2px
 ```
 
 ### How It Works
