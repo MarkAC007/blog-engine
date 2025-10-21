@@ -1,0 +1,92 @@
+{
+  "name": "ai-blog-engine",
+  "version": "1.0.0",
+  "description": "A modern, AI-assisted blog publishing system with markdown support, SEO optimization, and automated image generation using OpenAI and Google Gemini",
+  "author": "MarkAC",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/blog-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR-USERNAME/blog-engine/issues"
+  },
+  "homepage": "https://github.com/YOUR-USERNAME/blog-engine#readme",
+  "keywords": [
+    "blog",
+    "blog-engine",
+    "markdown",
+    "react",
+    "typescript",
+    "vite",
+    "ai",
+    "openai",
+    "gemini",
+    "seo",
+    "static-site",
+    "content-management",
+    "image-generation"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node ./scripts/generate-seo.mjs && node ./scripts/optimize-blog-images.js && node ./scripts/update-blog-paths.js",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "seo:gen": "node ./scripts/generate-seo.mjs",
+    "optimize:images": "node ./scripts/convert-images-to-webp.js",
+    "optimize:blog": "node ./scripts/optimize-blog-images.js",
+    "update:blog-paths": "node ./scripts/update-blog-paths.js",
+    "optimize:blog-full": "node ./scripts/optimize-blog-images.js && node ./scripts/update-blog-paths.js",
+    "generate:blog-image": "node ./scripts/generate-blog-image.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.47.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "@tsparticles/all": "^3.8.0",
+    "@tsparticles/engine": "^3.8.0",
+    "@tsparticles/react": "^3.0.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@vitejs/plugin-react-swc": "^3.7.2",
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fast-glob": "^3.3.3",
+    "framer-motion": "^12.19.1",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.344.0",
+    "openai": "^4.20.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^7.1.1",
+    "react-syntax-highlighter": "^15.6.1",
+    "remark-gfm": "^4.0.1",
+    "resend": "^4.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^9.9.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.35",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.3.0",
+    "vite": "^5.4.2"
+  },
+  "overrides": {
+    "prismjs": ">=1.30.0"
+  }
+}
