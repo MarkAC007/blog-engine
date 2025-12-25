@@ -12,10 +12,22 @@
   <a href="LICENSE">License</a>
 </p>
 
+<!-- Build & Deploy -->
 [![CI](https://img.shields.io/github/actions/workflow/status/MarkAC007/blog-engine/ci.yml?branch=main&label=CI&logo=github)](https://github.com/MarkAC007/blog-engine/actions/workflows/ci.yml)
+
+<!-- Security -->
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/MarkAC007/blog-engine/codeql.yml?branch=main&label=CodeQL&logo=github)](https://github.com/MarkAC007/blog-engine/actions/workflows/codeql.yml)
+[![Semgrep](https://img.shields.io/github/actions/workflow/status/MarkAC007/blog-engine/semgrep.yml?branch=main&label=Semgrep&logo=semgrep)](https://github.com/MarkAC007/blog-engine/actions/workflows/semgrep.yml)
+[![Gitleaks](https://img.shields.io/github/actions/workflow/status/MarkAC007/blog-engine/gitleaks.yml?branch=main&label=Gitleaks&logo=git)](https://github.com/MarkAC007/blog-engine/actions/workflows/gitleaks.yml)
+[![License Check](https://img.shields.io/github/actions/workflow/status/MarkAC007/blog-engine/license-check.yml?branch=main&label=Licenses&logo=github)](https://github.com/MarkAC007/blog-engine/actions/workflows/license-check.yml)
+
+<!-- Tech Stack -->
 [![React](https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-5-purple?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Vite](https://img.shields.io/badge/Vite-7-purple?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+
+<!-- Project Info -->
 [![GitHub Release](https://img.shields.io/github/v/release/MarkAC007/blog-engine)](https://github.com/MarkAC007/blog-engine/releases/latest)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Last Commit](https://img.shields.io/github/last-commit/MarkAC007/blog-engine)](https://github.com/MarkAC007/blog-engine/commits/main)
