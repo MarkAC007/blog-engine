@@ -1,4 +1,5 @@
 # AI Blog Engine
+[\![Release](https://github.com/MarkAC007/blog-engine/actions/workflows/auto-release.yml/badge.svg)](https://github.com/MarkAC007/blog-engine/actions/workflows/auto-release.yml)
 
 <p align="center">
   <strong>A Modern, AI-Assisted Blog Publishing System</strong>
@@ -437,13 +438,18 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
 
 ```typescript
 function extractFrontmatter(content: string): Record<string, string> {
-  const normalizedContent = content.replace(/\r\n/g, '\n');
-  const frontmatterMatch = normalizedContent.match(/^---\n([\s\S]*?)\n---/);
+  const normalizedContent = content.replace(/
+/g, '
+');
+  const frontmatterMatch = normalizedContent.match(/^---
+([\s\S]*?)
+---/);
   
   if (!frontmatterMatch) return {};
   
   const metadata: Record<string, string> = {};
-  const lines = frontmatterMatch[1].split('\n');
+  const lines = frontmatterMatch[1].split('
+');
   
   for (const line of lines) {
     const colonIndex = line.indexOf(':');
@@ -933,4 +939,3 @@ Built with ❤️ to showcase transparent AI-assisted content creation.
 
 *Last Updated: October 21, 2025*  
 *Version: 1.0.0*
-
