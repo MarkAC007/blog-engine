@@ -12,6 +12,16 @@ updates:
     commit-message:
       prefix: "chore"
       include: "scope"
+    # Ignore React 19 until react-helmet-async supports it
+    ignore:
+      - dependency-name: "react"
+        versions: [">=19.0.0"]
+      - dependency-name: "react-dom"
+        versions: [">=19.0.0"]
+      - dependency-name: "@types/react"
+        versions: [">=19.0.0"]
+      - dependency-name: "@types/react-dom"
+        versions: [">=19.0.0"]
     # Group dependencies updates
     groups:
       dev-dependencies:
