@@ -78,7 +78,7 @@
     "eslint": "^9.9.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.11",
-    "globals": "^17.1.0",
+    "globals": "^17.2.0",
     "postcss": "^8.4.35",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.0.0",
