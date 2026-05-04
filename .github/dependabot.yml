@@ -22,6 +22,9 @@ updates:
         versions: [">=19.0.0"]
       - dependency-name: "@types/react-dom"
         versions: [">=19.0.0"]
+      # Vite 8 requires @vitejs/plugin-react-swc v4 (peer dep mismatch). Pin until both bumped together.
+      - dependency-name: "vite"
+        versions: [">=8.0.0"]
     # Group dependencies updates
     groups:
       dev-dependencies:
@@ -39,4 +42,3 @@ updates:
       - "dependencies"
     commit-message:
       prefix: "ci"
-
